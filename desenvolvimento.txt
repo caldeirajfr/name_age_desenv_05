@@ -4,3 +4,26 @@ ou completará, no ano atual (2022).
 
 Caso o usuário não digite um número ou apareça um inválido no campo do ano, 
 o sistema informará o erro e continuará perguntando até que um valor correto seja preenchido.
+
+#Programa nome
+
+def nome():
+    nome_completo = str(input("Digite seu nome completo: "))
+    print("Seu nome é: " + nome_completo)
+    
+nome()
+
+#Programa idade
+
+def idade():
+    ano_nascimento = int(input("Digite o ano de nascimento: "))
+    while True:
+        if (ano_nascimento > 1922 and ano_nascimento < 2021):
+            idade = 2022 - ano_nascimento
+            print("Sua idade é: " + str(idade))
+            break
+        else:
+            print("Ano inválido")
+            ano_nascimento = int(input("Digite o ano de nascimento válido: "))
+            
+idade()
